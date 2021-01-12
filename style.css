@@ -90,14 +90,6 @@
     padding-top: 9px;
 }
 
-
-@media(max-width:375px){
-    .card{
-        width:326px;
-    }
-
-}
-
 /********** Footer **********/
 .attribution { 
     position: absolute;
@@ -110,3 +102,10 @@
     color: hsl(228, 45%, 44%); 
 }
 
+/********** Media Query **********/
+
+@media(max-width:375px){
+    .card{
+        width:326px;
+    }
+}
