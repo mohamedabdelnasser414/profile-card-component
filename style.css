@@ -16,17 +16,17 @@
     position: relative;
     font-family: 'Kumbh Sans', sans-serif;
     color: #2E3349;
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
     background-image: url(./images/bg-pattern-top.svg),url(./images/bg-pattern-bottom.svg);
     background-position: right 40vw bottom 45vh, left 40vw top 45vh;
     background-repeat: no-repeat;
 }
 
 .card{
-    width: 350px;
+    width: clamp(326px, 32vw, 350px);
     height: 374px;
-    border-radius: 15px;
+    border-radius: 1rem;
     background-color: #fff;
     overflow: hidden;
     text-align: center;
@@ -38,20 +38,20 @@
 
 .header{
     background-image: url(./images/bg-pattern-card.svg);
-    height: 140px;
+    height: 8.75rem;
 }
 .profile-img{
-    border-radius: 100%;
+    border-radius: 50%;
     border: solid #fff 5px;
     position: absolute;
     left: calc(50% - 53px);
-    top : 93px;
+    top : calc(8.75rem - 53px);
 }
 
 /********** Profile  **********/
 
 .name {
-    padding-top: 72px;
+    padding-top: 4.5rem;
     font-weight: bold;
 }
 .age{
@@ -60,11 +60,11 @@
 }
 
 .location{
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 0.875rem;
+    line-height: 0.875rem;
     color: #6B7082;
-    padding-top: 13px;
-    padding-bottom: 28px;
+    padding-top: 0.875rem;
+    padding-bottom: 1.75rem;
 }
 .profile{
     border-bottom: solid #E8E9EC 1px;
@@ -73,7 +73,7 @@
 /********** Card Bottom **********/
 
 .card-bottom{
-    padding: 24px 54px 24px 46px;
+    padding: 1.5rem 3.375rem 1.5rem 2.875rem;
 }
 .stats{
     list-style: none;
@@ -84,28 +84,20 @@
     font-weight: bold;
 }
 .small  {
-    font-size: 10px;
-    line-height: 10px;
+    font-size: 0.625rem;
+    line-height: 0.625rem;
     color: #6B7082 ;
-    padding-top: 9px;
+    padding-top: 0.56rem;
 }
 
 /********** Footer **********/
 .attribution { 
     position: absolute;
-    bottom: 20px;
-    font-size: 11px; 
+    bottom: 1.25rem;
+    font-size: 0.7rem; 
     text-align: center; 
 
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
-}
-
-/********** Media Query **********/
-
-@media(max-width:375px){
-    .card{
-        width:326px;
-    }
 }
